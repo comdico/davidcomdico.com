@@ -1,0 +1,23 @@
+{
+  "name": "Redpony",
+  "description": "Redpony: personal music web project.",
+  "main": "index.html",
+  "authors": [
+    "David Comdico"
+  ],
+  "license": "All Rights Reserverd",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "^2.2.12",
+    "breakpoint": "^4.6.4",
+    "breakpoint-sass": "^2.7.0"
+  }
+}

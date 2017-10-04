@@ -1,0 +1,102 @@
+.page-wrapper {
+    @include container();
+}
+
+.global-nav {
+  @include breakpoint($bp--xxsmall-up) {
+    width:100%;
+    margin-left:3em;
+  }
+  @include breakpoint($bp--xlarge-up) {
+    @include span(8 of 12);
+    @include pre(2 of 12);
+    @include post(2 of 12);
+  }
+
+}
+
+.feature-slide {
+  .number__area {
+      @include breakpoint($bp--xxsmall-up) {
+        width:100%;
+      }
+      @include breakpoint($bp--xlarge-up) {
+        @include span(2 of 12);
+      }
+  }
+
+  .image__area {
+    @include breakpoint($bp--xxsmall-up) {
+      width:100%;
+    }
+    @include breakpoint($bp--xlarge-up) {
+      @include span(8 of 12);
+    }
+
+  }
+  .link__area {
+    @include breakpoint($bp--xxsmall-up) {
+    }
+    @include breakpoint($bp--xlarge-up) {
+      @include span(2 of 12 last);
+    }
+  }
+}
+
+.about-text {
+    @include breakpoint($bp--xxsmall-up) {
+      @include span(10 of 12);
+      @include pre(1 of 12);
+      @include post(1 of 12 last);
+    }
+    @include breakpoint($bp--xxsmall-up) {
+    }
+    @include breakpoint($bp--xlarge-up) {
+      @include span(6 of 12 rtl );
+      @include pre(1 of 12);
+      @include post(0 of 12);
+    }
+}
+.about-photo {
+  @include breakpoint($bp--xxsmall-up) {
+    @include span(10 of 12);
+    @include pre(1 of 12 );
+    @include post(1 of 12 last);
+  }
+  @include breakpoint($bp--small-up) {
+    @include span(8 of 12);
+    @include pre(2 of 12 );
+    @include post(2 of 12 last);
+  }
+  @include breakpoint($bp--medium-up) {
+    @include span(6 of 12);
+    @include pre(3 of 12 );
+    @include post(3 of 12 last);
+  }
+  @include breakpoint($bp--xlarge-up) {
+    @include span(4 of 12 rtl);
+    @include post(0 of 12 last);
+    @include pre(1 of 12 );
+    margin-top: 1em;
+  }
+
+}
+
+.contact__type {
+  text-align: right;
+  @include breakpoint($bp--xsmall-up) {
+    @include span(6 of 12);
+  }
+  @include breakpoint($bp--xlarge-up) {
+    @include span(5 of 12);
+  }
+}
+.contact__list {
+  @include breakpoint($bp--xsmall-up) {
+    @include span(6 of 12 last);
+  }
+  @include breakpoint($bp--xlarge-up) {
+    @include span(7 of 12 last);
+  }
+
+}

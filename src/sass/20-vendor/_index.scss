@@ -1,0 +1,7 @@
+// Global Rules
+//
+// These are Drupal specific styles. This section will handle Drupal
+// output from vies and modules that cannot easily be altered. Each output
+// should be given its own sass file.
+
+@import 'drupal.container-inline.module';

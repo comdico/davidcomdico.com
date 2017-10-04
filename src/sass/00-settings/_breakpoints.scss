@@ -1,0 +1,26 @@
+// Sign posts
+$width-xxsmall: 300px;
+$width-xsmall: 375px;
+$width-small: 480px;
+$width-medium: 640px;
+$width-ipad: 768px;
+$width-large: 820px;
+$width-xlarge: 1024px;
+$width-xlarge-fixed: 1025px;
+$width-xxlarge: 1280px;
+$width-xxxlarge: 1600px;
+
+// Mobile-first queries
+// Breakpoint variables are prefixed with "$bp--"
+$bp--xxsmall-up: $width-xxsmall; // 400px
+$bp--xsmall-up: $width-xsmall; // 400px
+$bp--small-up: $width-small; // 480px
+$bp--medium-up: $width-medium; // 640px
+$bp--ipad-up: $width-ipad; // 768px
+$bp--large-up: $width-large; // 768px
+$bp--xlarge-up: $width-xlarge; // 1024px
+$bp--xlarge-fixed: $width-xlarge-fixed; // 1024px
+$bp--xxlarge-up: $width-xxlarge; // 1280px
+$bp--xxxlarge-up: $width-xxxlarge; // 1600px
+
+$iphone-landscape: screen 325px 667px, handheld (orientation landscape);

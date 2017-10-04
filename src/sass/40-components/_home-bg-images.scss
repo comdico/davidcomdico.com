@@ -1,0 +1,33 @@
+// these are temporary for use in the prototype. These will be replaces with css written in the theme, somethign like:
+//function mytheme_page_attachments_alter(array &$attachments) {
+//   $uri = [];
+//   if (($node = \Drupal::routeMatch()->getParameter('node'))
+//        && is_object($node)
+//        && $node->field_banner_image
+//        && $node->field_banner_image[0]) {
+
+//     $path = $node->field_banner_image[0]->entity->getFileUri();
+//     $uri['mobile'] = ImageStyle::load('banner_mobile')->buildUrl($path);
+//     $uri['desktop'] = ImageStyle::load('banner_desktop')->buildUrl($path);
+//   } else {
+//     $uri['mobile'] = '/path/to/default/mobile-background.jpg';
+//     $uri['desktop'] = '/path/to/default/desktop-background.jpg';
+//   }
+
+//   $banner = array(
+//     '#type' => 'html_tag',
+//     '#tag' => 'style',
+//     '#attributes' => array(
+//       'type' => 'text/css',
+//     ),
+//     '#value' => '.site-header {
+//         background-image: url("' . $uri['mobile'] . '") !important;
+//       }
+//       @media screen and (min-width: 900px) {
+//       .site-header {
+//         background-image: url("' . $uri['desktop'] . '") !important;
+//       }
+//     }',
+//   );
+//   $attachments['#attached']['html_head'][] = [$banner, 'banner-image-style'];
+// }

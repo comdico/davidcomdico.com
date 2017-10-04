@@ -1,0 +1,19 @@
+// SUSY
+$susy: (
+  // debug: (
+  //   image: show,
+  //   color: rgba(#66f, .25),
+  //   output: overlay,
+  //   toggle: bottom right,
+  // ),
+  columns: 12,
+  gutters: 22px/98px,
+  global-box-sizing: border-box,
+
+);
+
+//Sprite settings
+
+$ieSprite: '.lt-ie9' !default;
+// $sprite: map-get($icons, sprite) !default;
+$baseFontSize: 16px !default;

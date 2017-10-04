@@ -1,0 +1,201 @@
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* default OS fonts */
+body {
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+}
+
+/* fonts now loaded */
+// .wf-active body {
+// 	 font-family: $font--body;
+// }
+.home-slide--tag {
+  margin-top:0;
+  font-family: $font--main;
+  color: #fff;
+  font-size: rem(24);
+  text-align: center;
+  font-weight: 400;
+  top: 1.2em;
+  position: relative;
+}
+
+.home-slide--name {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: $font--main;
+  @include breakpoint($bp--xxsmall-up) {
+    margin-top: 15vh;
+  }
+  @include breakpoint($bp--xlarge-up) {
+    margin-top: 23vh;
+  }
+
+    .name__first {
+      font-weight: 100;
+      letter-spacing: 15px;
+      @include breakpoint($bp--xxsmall-up) {
+        font-size: rem(56);
+      }
+      @include breakpoint($bp--xlarge-up) {
+        font-size: rem(110);
+      }
+
+    }
+    .name__last {
+      font-weight: 400;
+      display: block;
+      letter-spacing: 1px;
+      @include breakpoint($bp--xxsmall-up) {
+        font-size: rem(62);
+        margin-top: -13px;
+      }
+      @include breakpoint($bp--xlarge-up) {
+        font-size: rem(114);
+        margin-top: -31px;
+      }
+    }
+}
+
+.slide-number {
+  font-size: rem(36);
+  color: #fff;
+  font-weight: 200;
+  font-family: $font--main;
+  // margin-bottom: .6em;
+  margin-bottom: 0em;
+}
+
+.number__area p, .link__area p {
+  // margin:.5em 0;
+  margin:.0 0 1em 0;
+      a:link, a:visited {
+        color: #fff;
+        text-decoration: none;
+        font-family: $font--main;
+        position: relative;
+      }
+      a:hover, a:active {
+        color: #fff;
+        position: relative;
+      }
+}
+
+
+.number__area p a:before, .link__area p a:before, .contact__list--item a:before, .nav-list li a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.number__area p a:hover:before, .link__area p a:hover:before, .contact__list--item a:hover:before, .nav-list li a:hover:before  {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.about-header {
+  font-family: $font--main;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 200;
+  @include breakpoint($bp--xxsmall-up) {
+    font-size: rem(25);
+    margin: 1.5em 0 .5em 0;
+  }
+  @include breakpoint($bp--xlarge-up) {
+    font-size: rem(52);
+    margin: 1em 0 .25em 0;
+  }
+  @include breakpoint($bp--xxxlarge-up) {
+    font-size: rem(64);
+    margin: 1.5em 0 .5em 0;
+  }
+
+}
+
+.about-slide p {
+  font-family: $font--main;
+  @include breakpoint($bp--xxsmall-up) {
+    font-size: rem(16);
+    line-height: rem(21);
+  }
+  @include breakpoint($bp--xlarge-up) {
+    font-size: rem(16);
+    line-height: rem(20);
+  }
+  @include breakpoint($bp--xxlarge-up) {
+    font-size: rem(17);
+    line-height: rem(23);
+  }
+  @include breakpoint($bp--xxxlarge-up) {
+    font-size: rem(18);
+    line-height: rem(24);
+  }
+}
+
+.contact__list--item {
+  font-family: $font--main;
+  font-weight: 200;
+  // margin-bottom: .6em;
+  position: relative;
+  // padding: .5em 0;
+  @include breakpoint($bp--xxsmall-up) {
+    font-size: rem(18);
+  }
+  @include breakpoint($bp--ipad-up) {
+    font-size: rem(26);
+  }
+  @include breakpoint($bp--large-up) {
+    font-size: rem(32);
+  }
+  @include breakpoint($bp--xlarge-up) {
+    font-size: rem(44);
+  }
+  @include breakpoint($bp--xxxlarge-up) {
+    font-size: rem(62);
+  }
+  a {
+    color:#000;
+    text-decoration: none;
+  }
+}
+
+.contact__list--item a:before {
+    background-color: #000;
+    width:75%;
+}
+
+
+
+.contact__type li {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.image-header {
+  color: #fff;
+  margin: 0 0 .5em 0;
+  font-family: $font--main;
+  font-weight: 400;
+  text-transform: uppercase;
+  @include breakpoint($bp--xxsmall-up) {
+    font-size: rem(24);
+  }
+  @include breakpoint($bp--xlarge-up) {
+    font-size: rem(32);
+  }
+
+}

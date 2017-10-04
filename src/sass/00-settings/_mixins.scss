@@ -1,0 +1,21 @@
+// calculate px to rem
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+//homepage gradient overlay for large slots
+
+@mixin slot-gradient ($slot-height) {
+	background: linear-gradient(to bottom, rgba(5,1,1,0) 0%,rgba(4,1,1,0) 30%,rgba(2,1,1,0.9) 100%);
+	position:absolute;
+	width:100%;
+	height:$slot-height;
+	top:0;
+}

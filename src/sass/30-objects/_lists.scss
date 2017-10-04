@@ -1,0 +1,216 @@
+// GLOBAL
+//===================
+
+.list__inline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width:100%;
+    li {
+      float:left;
+      position: relative;
+      width:auto;
+    }
+}
+
+.list__style {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// LOCAL
+//==================
+
+.home-slide--list {
+  background-color: rgba(255,255,255,.4);
+  width: 100%;
+  min-height: 130px;
+      @include breakpoint($bp--xxsmall-up) {
+        margin-top: 3em;
+      }
+      @include breakpoint($bp--xlarge-up) {
+        margin-top: 5em;
+      }
+      @include breakpoint($bp--xxxlarge-up) {
+        margin-top: 10em;
+      }
+  li {
+    width:33%;
+    margin-top:10px;
+    @include breakpoint($bp--xxsmall-up) {
+      padding: 0 8vw;
+    }
+    @include breakpoint($bp--xlarge-up) {
+      padding: 0 11vw;
+    }
+    @include breakpoint($bp--xxlarge-up) {
+      padding: 0 13vw;
+    }
+
+
+    a {
+      text-align: center;
+      text-decoration: none;
+      line-height: 4.5em;
+      span {
+        display: block;
+      }
+    }
+  }
+
+}
+
+.nav-list--number {
+    border-bottom: 2px solid #4A4A4A;
+}
+
+.nav-list--number {
+  font-family: $font--main;
+  @include breakpoint($bp--xxsmall-up) {
+    font-size: rem(51);
+  }
+  @include breakpoint($bp--xlarge-up) {
+    font-size: rem(64);
+  }
+
+
+}
+.home-slide--list a:link, .home-slide--list a:visited {
+  color: #fff;
+}
+.home-slide--list a:hover, .home-slide--list a:active {
+  color: #000;
+}
+
+
+.nav-list--label {
+  font-family: $font--main;
+  text-transform: uppercase;
+  line-height: 1.5em;
+  @include breakpoint($bp--xxsmall-up) {
+    font-size: rem(14);
+  }
+  @include breakpoint($bp--small-up) {
+    font-size: rem(18);
+  }
+  @include breakpoint($bp--medium-up) {
+    font-size: rem(21);
+  }
+  @include breakpoint($bp--xlarge-up) {
+    font-size: rem(24);
+  }
+}
+
+
+
+// .contact__type .email--item:before {
+//   content:'';
+//   background-image: url(../img/email.png);
+//   position: absolute;
+//   width: 67px;
+//   height: 70px;
+//   float: left;
+//   margin-left: -80px;
+//   background-repeat: no-repeat;
+//     @include breakpoint($bp--xxsmall-up) {
+//       top:0px;
+//     }
+//     @include breakpoint($bp--xlarge-up) {
+//       top:8px;
+//     }
+// }
+// .contact__type .twitter--item:before {
+//   content:'';
+//   background-image: url(../img/twitter.png);
+//   position: absolute;
+//   width: 67px;
+//   height: 70px;
+//   float: left;
+//   margin-left: -75px;
+//   background-repeat: no-repeat;
+//   @include breakpoint($bp--xxsmall-up) {
+//     top:0px;
+//   }
+//   @include breakpoint($bp--xlarge-up) {
+//     top:5px;
+//   }
+// }
+// .contact__type .instagram--item:before {
+//   content:'';
+//   background-image: url(../img/instagram.png);
+//   position: absolute;
+//   width: 67px;
+//   height: 70px;
+//   float: left;
+//   margin-left: -75px;
+//   background-repeat: no-repeat;
+//   @include breakpoint($bp--xxsmall-up) {
+//     top:0px;
+//   }
+//   @include breakpoint($bp--xlarge-up) {
+//     top:5px;
+//   }
+// }
+
+.email-icon {
+  margin-top: -8px;
+  @include breakpoint($bp--xsmall-up) {
+    max-width: 15%;
+  }
+  @include breakpoint($bp--xlarge-up) {
+    max-width: 100%;
+  }
+  @include breakpoint($bp--xxxlarge-up) {
+    max-width: 120%;
+  }
+}
+.twitter-icon {
+  margin-top: -8px;
+  @include breakpoint($bp--xsmall-up) {
+    max-width: 15%;
+  }
+  @include breakpoint($bp--xlarge-up) {
+    max-width: 100%;
+  }
+}
+.instagram-icon {
+  margin-top: -6px;
+  @include breakpoint($bp--xsmall-up) {
+    max-width: 15%;
+  }
+  @include breakpoint($bp--xlarge-up) {
+    max-width: 100%;
+  }
+}
+
+.contact__list--item {
+  margin:1.5em 0;
+  line-height: 2em;
+}
+
+.nav-list {
+  li {
+    @include breakpoint($bp--xxsmall-up) {
+      margin: 0 .5em 0 0;
+    }
+    @include breakpoint($bp--xlarge-up) {
+      margin: 0 1em;
+    }
+
+    a {
+      font-family: $font--main;
+      font-weight: 400;
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+
+      @include breakpoint($bp--xsmall-up) {
+        font-size: rem(16);
+      }
+      @include breakpoint($bp--xlarge-up) {
+        font-size: rem(21);
+      }
+    }
+  }
+}

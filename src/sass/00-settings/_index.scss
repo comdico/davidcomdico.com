@@ -1,0 +1,14 @@
+// Setting Rules
+//
+// These are your global variables and configuration settings.
+// This is where you would put your Sass variables containing
+// your variables for fonts, typography sizes, colors,
+// paddings, margins, and breakpoints.
+
+@import 'settings';
+@import 'mixins';
+@import 'breakpoints';
+@import 'colors';
+@import 'fonts';
+@import 'font-faces';
+@import 'z-index';

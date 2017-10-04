@@ -1,0 +1,145 @@
+.home-slide {
+  // background-color: $bg-color;
+  background: url(../img/baloons.jpg) no-repeat bottom center;
+  // width: 100vw;
+  width: 100%;
+  z-index: 500;
+  position: relative;
+  background-size: cover;
+  background-origin: content-box;
+  // background-position-y: 80%;
+
+
+  @include breakpoint($bp--xxsmall-up) {
+  background-attachment: local;
+  }
+  // @include breakpoint($bp--medium-up) {
+  // // background-position-x: -80px;
+  // }
+
+  @include breakpoint($bp--xxsmall-up) {
+  height: 550px;
+  }
+  @include breakpoint($bp--medium-up) {
+  height: 600px;
+  }
+  @include breakpoint($bp--ipad-up) {
+  height: 800px;
+  }
+  @include breakpoint($bp--large-up) {
+  // background-position-x: 0%;
+  height: 100vh;
+  }
+  @include breakpoint($bp--xlarge-up) {
+  height: 100vh;
+  }
+  @include breakpoint($bp--xlarge-fixed) {
+  background-attachment: fixed;
+  }
+}
+
+.feature-slide {
+  width:100%;
+  background-color: #000;
+  @include breakpoint($bp--xxsmall-up) {
+    padding: 10vh 6vw;
+    height:auto;
+  }
+  @include breakpoint($bp--medium-up) {
+    padding: 10vh 12vw;
+  }
+  @include breakpoint($bp--ipad-up) {
+    padding: 10vh 12vw;
+  }
+  @include breakpoint($bp--large-up) {
+    padding: 1vh 15vw;
+  }
+  @include breakpoint($bp--xlarge-up) {
+    padding: 8vh 2vw;
+    height:100vh;
+  }
+  @include breakpoint(1400px) {
+    padding: 15vh 6vw;
+  }
+  @include breakpoint($bp--xxxlarge-up) {
+    padding: 15vh 12vw;
+  }
+}
+.feature-slide.alt {
+  background-color: #666;
+}
+
+.about-slide {
+  width:100%;
+  background-color: #eee;
+    @include breakpoint($bp--xxsmall-up) {
+      padding: 0vw;
+      height: auto;
+      overflow: hidden;
+    }
+    @include breakpoint($bp--xlarge-up) {
+      padding: 0vh 10vw;
+      height:100vh;
+      overflow: inherit;
+    }
+    @include breakpoint($bp--xxxlarge-up) {
+      padding: 13vh 10vw;
+    }
+}
+.contact-slide {
+  width:100%;
+  height:100vh;
+  margin-top: 7em;
+  background-color: #fff;
+
+  @include breakpoint($bp--xxsmall-up) {
+    padding: 10vh 10vw;
+    height:79vh;
+  }
+  @include breakpoint($bp--xlarge-up) {
+    padding:0vh 10vw;
+    height:80vh;
+  }
+  @include breakpoint($bp--xxxlarge-up) {
+    padding: 1vh 10vw;
+  }
+}
+
+.number__area {
+  text-align: right;
+}
+.image__area {
+  text-align: center;
+}
+
+
+.link__area {
+  text-align: left;
+  height: 100%;
+  position: relative;
+
+  .link__area--link {
+    vertical-align: bottom;
+      @include breakpoint($bp--xxsmall-up) {
+        position: relative;
+        bottom: 0em;
+      }
+      @include breakpoint($bp--xlarge-up) {
+        position: absolute;
+        bottom: 3em;
+      }
+      @include breakpoint(1200px) {
+        position: absolute;
+        bottom: 0em;
+      }
+      @include breakpoint($bp--xxxlarge-up) {
+        position: absolute;
+        bottom: 9em;
+      }
+  }
+}
+
+.portrait--img {
+  border-radius: 50%;
+  margin-top: 8em;
+}

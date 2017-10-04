@@ -1,0 +1,7 @@
+// Overrides Rules
+//
+// These should be used sparingly to “override” other styles. They
+// should contain high-specificity selectors. These are things like utility
+// classes such as .hide which may use a rule like display none !important.
+
+@import 'utilities';
